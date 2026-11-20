@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pixel Nonogram</title>
-<meta name="description" content="Pixel Nonogram – game giải đố hình ảnh logic, chơi offline / An offline picture logic puzzle game.">
+<title>ChauVB – Ứng dụng &amp; game / Apps &amp; games</title>
+<meta name="description" content="ChauVB (chauvb.dev) – nhà phát triển ứng dụng và game di động / Mobile app and game developer.">
 <style>
   :root {
     --bg: #fbfaf7;
@@ -12,6 +12,7 @@
     --muted: #59636e;
     --accent: #1e6fd8;
     --rule: #e3e1dc;
+    --card: #ffffff;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -20,6 +21,7 @@
       --muted: #a0a7af;
       --accent: #7fb0f5;
       --rule: #2c3036;
+      --card: #1c1f23;
     }
   }
   * { box-sizing: border-box; }
@@ -30,18 +32,37 @@
     font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   }
   main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 4px; }
-  h2 { font-size: 1.2rem; margin: 32px 0 8px; }
-  p, li { margin: 0 0 10px; }
-  ul { padding-left: 22px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 12px; }
+  h3 { font-size: 1.1rem; margin: 0 0 4px; }
+  p { margin: 0 0 10px; }
   a { color: var(--accent); }
-  .meta { color: var(--muted); margin-bottom: 24px; }
+  .meta { color: var(--muted); margin-bottom: 20px; }
   .lang { margin: 0 0 24px; }
   section.lang-block + section.lang-block {
     border-top: 1px solid var(--rule);
     margin-top: 48px;
     padding-top: 32px;
   }
+  .apps { display: grid; gap: 16px; }
+  .app {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 16px;
+    padding: 16px;
+  }
+  .app img {
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
+    flex: none;
+  }
+  .app p { color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0; }
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 48px; }
 </style>
 </head>
 <body>
@@ -49,36 +70,56 @@
   <p class="lang"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
 
   <section class="lang-block" id="vi" lang="vi">
-    <h1>Pixel Nonogram</h1>
-    <p class="meta">Game giải đố hình ảnh logic cho Android</p>
+    <h1>ChauVB</h1>
+    <p class="meta">chauvb.dev · Ứng dụng và game di động</p>
+    <p>Xin chào! Đây là trang của ChauVB, nơi tổng hợp các ứng dụng và game mình phát triển.</p>
 
-    <p><strong>Pixel Nonogram</strong> là game nonogram (giải đố hình ảnh bằng logic): dựa vào các con số ở đầu hàng và cột để tô ô, dần dần hiện ra một bức tranh pixel. Game chơi offline, không cần tài khoản.</p>
+    <h2>Ứng dụng</h2>
+    <div class="apps">
+      <article class="app">
+        <img src="/images/pixel-nonogram.png" alt="Biểu tượng Pixel Nonogram">
+        <div>
+          <h3>Pixel Nonogram</h3>
+          <p>Game giải đố hình ảnh logic: dựa vào các con số ở hàng và cột để tô ô, hiện ra tranh pixel. Chơi offline, không cần tài khoản.</p>
+          <p class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.chauvb.nonogram">Google Play</a>
+            <a href="/nonogram/privacy/">Chính sách quyền riêng tư</a>
+          </p>
+        </div>
+      </article>
+      <!-- Thêm app mới: sao chép khối <article class="app"> ở trên. -->
+    </div>
 
-    <h2>Tải game</h2>
-    <p><a href="https://play.google.com/store/apps/details?id=com.chauvb.nonogram">Pixel Nonogram trên Google Play</a></p>
-
-    <h2>Thông tin</h2>
-    <ul>
-      <li><a href="/nonogram/privacy/">Chính sách quyền riêng tư</a></li>
-      <li><a href="/app-ads.txt">app-ads.txt</a></li>
-    </ul>
+    <h2>Liên hệ</h2>
+    <p>Email: <a href="mailto:chauvb.dev@gmail.com">chauvb.dev@gmail.com</a></p>
   </section>
 
   <section class="lang-block" id="en" lang="en">
-    <h1>Pixel Nonogram</h1>
-    <p class="meta">A picture logic puzzle game for Android</p>
+    <h1>ChauVB</h1>
+    <p class="meta">chauvb.dev · Mobile apps and games</p>
+    <p>Hi! This is the home of ChauVB, collecting the apps and games I make.</p>
 
-    <p><strong>Pixel Nonogram</strong> is a nonogram (picture logic) puzzle game: use the numbers at the start of each row and column to fill in cells and reveal a pixel-art picture. It plays offline and needs no account.</p>
+    <h2>Apps</h2>
+    <div class="apps">
+      <article class="app">
+        <img src="/images/pixel-nonogram.png" alt="Pixel Nonogram icon">
+        <div>
+          <h3>Pixel Nonogram</h3>
+          <p>A picture logic puzzle game: use the numbers on each row and column to fill in cells and reveal pixel art. Plays offline, no account needed.</p>
+          <p class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.chauvb.nonogram">Google Play</a>
+            <a href="/nonogram/privacy/">Privacy policy</a>
+          </p>
+        </div>
+      </article>
+      <!-- New app: copy the <article class="app"> block above. -->
+    </div>
 
-    <h2>Get the game</h2>
-    <p><a href="https://play.google.com/store/apps/details?id=com.chauvb.nonogram">Pixel Nonogram on Google Play</a></p>
-
-    <h2>Information</h2>
-    <ul>
-      <li><a href="/nonogram/privacy/">Privacy policy</a></li>
-      <li><a href="/app-ads.txt">app-ads.txt</a></li>
-    </ul>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:chauvb.dev@gmail.com">chauvb.dev@gmail.com</a></p>
   </section>
+
+  <footer>© 2026 ChauVB</footer>
 </main>
 </body>
 </html>
