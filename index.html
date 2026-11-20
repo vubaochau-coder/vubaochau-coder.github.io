@@ -1,125 +1,144 @@
 <!doctype html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ChauVB – Ứng dụng &amp; game / Apps &amp; games</title>
-<meta name="description" content="ChauVB (chauvb.dev) – nhà phát triển ứng dụng và game di động / Mobile app and game developer.">
-<style>
-  :root {
-    --bg: #fbfaf7;
-    --fg: #1f2328;
-    --muted: #59636e;
-    --accent: #1e6fd8;
-    --rule: #e3e1dc;
-    --card: #ffffff;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #15171a;
-      --fg: #e6e6e3;
-      --muted: #a0a7af;
-      --accent: #7fb0f5;
-      --rule: #2c3036;
-      --card: #1c1f23;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 4px; }
-  h2 { font-size: 1.2rem; margin: 36px 0 12px; }
-  h3 { font-size: 1.1rem; margin: 0 0 4px; }
-  p { margin: 0 0 10px; }
-  a { color: var(--accent); }
-  .meta { color: var(--muted); margin-bottom: 20px; }
-  .lang { margin: 0 0 24px; }
-  section.lang-block + section.lang-block {
-    border-top: 1px solid var(--rule);
-    margin-top: 48px;
-    padding-top: 32px;
-  }
-  .apps { display: grid; gap: 16px; }
-  .app {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    background: var(--card);
-    border: 1px solid var(--rule);
-    border-radius: 16px;
-    padding: 16px;
-  }
-  .app img {
-    width: 72px;
-    height: 72px;
-    border-radius: 16px;
-    flex: none;
-  }
-  .app p { color: var(--muted); }
-  .links { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0; }
-  footer { color: var(--muted); font-size: 0.9rem; margin-top: 48px; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChauVB (chauvb.dev) — Ứng dụng và game di động</title>
+  <meta name="description" content="ChauVB (chauvb.dev) — nhà phát triển độc lập các ứng dụng và game di động nhẹ nhàng, tôn trọng quyền riêng tư.">
+  <meta name="theme-color" content="#0D1117">
+
+  <link rel="canonical" href="https://vubaochau-coder.github.io/">
+  <link rel="alternate" hreflang="vi" href="https://vubaochau-coder.github.io/">
+  <link rel="alternate" hreflang="en" href="https://vubaochau-coder.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://vubaochau-coder.github.io/">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ChauVB">
+  <meta property="og:title" content="ChauVB (chauvb.dev) — Ứng dụng và game di động">
+  <meta property="og:description" content="Trang chính thức của nhà phát triển ChauVB — tổng hợp các ứng dụng và game di động trên Google Play.">
+  <meta property="og:url" content="https://vubaochau-coder.github.io/">
+  <meta property="og:image" content="https://vubaochau-coder.github.io/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script>try{if(localStorage.getItem('chauvb-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<main>
-  <p class="lang"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
+  <a class="skip-link" href="#main-content">Chuyển tới nội dung chính</a>
 
-  <section class="lang-block" id="vi" lang="vi">
-    <h1>ChauVB</h1>
-    <p class="meta">chauvb.dev · Ứng dụng và game di động</p>
-    <p>Xin chào! Đây là trang của ChauVB, nơi tổng hợp các ứng dụng và game mình phát triển.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="/">
+        <img class="brand-logo" src="/images/chauvb-logo.svg" alt="Biểu tượng chauvb.dev" width="38" height="38">
+        <span>
+          <span class="brand-name">ChauVB</span>
+          <span class="brand-handle">chauvb.dev</span>
+        </span>
+      </a>
 
-    <h2>Ứng dụng</h2>
-    <div class="apps">
-      <article class="app">
-        <img src="/images/pixel-nonogram.png" alt="Biểu tượng Pixel Nonogram">
-        <div>
-          <h3>Pixel Nonogram</h3>
-          <p>Game giải đố hình ảnh logic: dựa vào các con số ở hàng và cột để tô ô, hiện ra tranh pixel. Chơi offline, không cần tài khoản.</p>
-          <p class="links">
-            <a href="https://play.google.com/store/apps/details?id=com.chauvb.nonogram">Google Play</a>
-            <a href="/nonogram/privacy/">Chính sách quyền riêng tư</a>
-          </p>
-        </div>
-      </article>
-      <!-- Thêm app mới: sao chép khối <article class="app"> ở trên. -->
+      <nav class="header-actions" aria-label="Điều hướng và giao diện">
+        <a class="control-btn" href="/en/" lang="en" hreflang="en">
+          <span aria-hidden="true">🌐</span>
+          <span>English</span>
+        </a>
+        <button id="theme-toggle" class="control-btn" type="button" aria-pressed="false"
+                data-label-light="Chuyển sang giao diện sáng"
+                data-label-dark="Chuyển sang giao diện tối"
+                aria-label="Chuyển sang giao diện sáng">
+          <span data-theme-icon aria-hidden="true">☀️</span>
+        </button>
+      </nav>
     </div>
+  </header>
 
-    <h2>Liên hệ</h2>
-    <p>Email: <a href="mailto:chauvb.dev@gmail.com">chauvb.dev@gmail.com</a></p>
-  </section>
-
-  <section class="lang-block" id="en" lang="en">
-    <h1>ChauVB</h1>
-    <p class="meta">chauvb.dev · Mobile apps and games</p>
-    <p>Hi! This is the home of ChauVB, collecting the apps and games I make.</p>
-
-    <h2>Apps</h2>
-    <div class="apps">
-      <article class="app">
-        <img src="/images/pixel-nonogram.png" alt="Pixel Nonogram icon">
-        <div>
-          <h3>Pixel Nonogram</h3>
-          <p>A picture logic puzzle game: use the numbers on each row and column to fill in cells and reveal pixel art. Plays offline, no account needed.</p>
-          <p class="links">
-            <a href="https://play.google.com/store/apps/details?id=com.chauvb.nonogram">Google Play</a>
-            <a href="/nonogram/privacy/">Privacy policy</a>
-          </p>
+  <main id="main-content" class="container">
+    <section class="hero">
+      <div class="hero-top">
+        <div class="hero-avatar-wrap">
+          <img class="hero-avatar" src="/images/chauvb-logo.svg" alt="Logo nhà phát triển ChauVB" width="72" height="72">
         </div>
-      </article>
-      <!-- New app: copy the <article class="app"> block above. -->
+        <div>
+          <h1>ChauVB</h1>
+          <p class="hero-tagline">chauvb.dev · Ứng dụng và game di động</p>
+        </div>
+      </div>
+      <p class="hero-intro">
+        Xin chào! Mình là Châu (ChauVB) — nhà phát triển độc lập tạo ra các game giải đố nhẹ nhàng và ứng dụng di động gọn gàng, tôn trọng quyền riêng tư.
+      </p>
+    </section>
+
+    <section class="apps-section" aria-labelledby="apps-heading">
+      <div class="section-head">
+        <h2 id="apps-heading" class="section-title">Ứng dụng &amp; Game</h2>
+      </div>
+
+      <div class="apps-grid">
+        <!-- App: Pixel Nonogram -->
+        <article class="app-card" style="--app-accent: #5B48DA;">
+          <div>
+            <div class="app-card-head">
+              <img class="app-icon" src="/images/pixel-nonogram.png" alt="Biểu tượng game Pixel Nonogram" width="72" height="72">
+              <div class="app-title-wrap">
+                <h3 class="app-name">Pixel Nonogram</h3>
+                <div class="app-meta">Android · Miễn phí</div>
+              </div>
+            </div>
+            <p class="app-desc">
+              Game giải đố hình ảnh logic: dựa vào các con số ở hàng và cột để tô ô, hiện ra tranh pixel. Chơi offline, không cần tài khoản. Hơn 1.000 màn.
+            </p>
+            <ul class="app-tags" aria-label="Điểm nổi bật">
+              <li>Chơi offline</li>
+              <li>Không cần tài khoản</li>
+              <li>1.000+ màn</li>
+            </ul>
+          </div>
+
+          <div class="app-actions">
+            <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.chauvb.nonogram" target="_blank" rel="noopener noreferrer" aria-label="Tải Pixel Nonogram trên Google Play">
+              <svg width="20" height="22" viewBox="0 0 24 26" fill="none" aria-hidden="true">
+                <path d="M1.2 0.8C0.9 1.1 0.7 1.6 0.7 2.2V23.8C0.7 24.4 0.9 24.9 1.2 25.2L1.4 25.3L13.5 13.2V12.8L1.4 0.7L1.2 0.8Z" fill="#4285F4"/>
+                <path d="M17.5 17.2L13.5 13.2V12.8L17.5 8.8L17.6 8.9L22.3 11.6C23.7 12.4 23.7 13.6 22.3 14.4L17.6 17.1L17.5 17.2Z" fill="#FBBC04"/>
+                <path d="M17.6 17.1L13.5 13L1.2 25.2C1.7 25.7 2.4 25.7 3.3 25.2L17.6 17.1Z" fill="#EA4335"/>
+                <path d="M17.6 8.9L3.3 0.8C2.4 0.3 1.7 0.3 1.2 0.8L13.5 13L17.6 8.9Z" fill="#34A853"/>
+              </svg>
+              <span class="play-badge-text">
+                <span class="play-badge-sub">Tải nội dung trên</span>
+                <span class="play-badge-main">Google Play</span>
+              </span>
+            </a>
+            <a class="privacy-link" href="/nonogram/privacy/">Chính sách quyền riêng tư</a>
+          </div>
+        </article>
+        <!-- Thêm app mới: sao chép khối <article class="app-card"> ở trên, đổi --app-accent, icon, tên, mô tả và đường dẫn. -->
+      </div>
+    </section>
+
+    <section class="contact-card" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-title">Liên hệ</h2>
+      <p>Có góp ý, báo lỗi hay câu hỏi về ứng dụng? Nhắn mình qua email nhé:</p>
+      <a class="email-chip" href="mailto:chauvb.dev@gmail.com">
+        <span aria-hidden="true">✉</span>
+        <span>chauvb.dev@gmail.com</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2026 ChauVB (<span class="mono">chauvb.dev</span>)</div>
+      <div class="footer-links">
+        <a href="/nonogram/privacy/">Chính sách Pixel Nonogram</a>
+        <a href="/en/" lang="en" hreflang="en">English</a>
+      </div>
     </div>
+  </footer>
 
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:chauvb.dev@gmail.com">chauvb.dev@gmail.com</a></p>
-  </section>
-
-  <footer>© 2026 ChauVB</footer>
-</main>
+  <script src="/assets/site.js" defer></script>
 </body>
 </html>
