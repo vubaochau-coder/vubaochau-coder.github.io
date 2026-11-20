@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chính sách quyền riêng tư của {{APP_NAME}} — ChauVB</title>
+  <meta name="description" content="Chính sách quyền riêng tư của {{APP_NAME}} ({{APP_ID}}) phát triển bởi ChauVB (chauvb.dev).">
+  <meta name="theme-color" content="#0D1117">
+
+  <link rel="canonical" href="https://vubaochau-coder.github.io/{{APP_SLUG}}/privacy/">
+  <link rel="alternate" hreflang="vi" href="https://vubaochau-coder.github.io/{{APP_SLUG}}/privacy/">
+  <link rel="alternate" hreflang="en" href="https://vubaochau-coder.github.io/en/{{APP_SLUG}}/privacy/">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <script>try{if(localStorage.getItem('chauvb-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Chuyển tới nội dung chính</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="/">
+        <img class="brand-logo" src="/images/chauvb-logo.svg" alt="Biểu tượng chauvb.dev" width="38" height="38">
+        <span>
+          <span class="brand-name">ChauVB</span>
+          <span class="brand-handle">chauvb.dev</span>
+        </span>
+      </a>
+      <nav class="header-actions" aria-label="Ngôn ngữ và giao diện">
+        <a class="control-btn" href="/en/{{APP_SLUG}}/privacy/" lang="en" hreflang="en">
+          <span aria-hidden="true">🌐</span>
+          <span>English</span>
+        </a>
+        <button id="theme-toggle" class="control-btn" type="button" aria-pressed="false"
+                data-label-light="Chuyển sang giao diện sáng"
+                data-label-dark="Chuyển sang giao diện tối"
+                aria-label="Chuyển sang giao diện sáng">
+          <span data-theme-icon aria-hidden="true">☀️</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <!-- Đổi --app-accent theo màu đặc trưng của app -->
+    <article class="policy-article" style="--app-accent: #3FB978;">
+      <div class="policy-topbar">
+        <a class="back-link" href="/">← Quay về trang chủ</a>
+        <button class="control-btn no-print" type="button" onclick="window.print()">
+          <span aria-hidden="true">🖨</span>
+          <span>In / Lưu PDF</span>
+        </button>
+      </div>
+
+      <div class="policy-header">
+        <img class="policy-app-icon" src="/images/{{APP_SLUG}}.png" alt="Biểu tượng {{APP_NAME}}" width="52" height="52">
+        <div>
+          <h1>Chính sách quyền riêng tư của {{APP_NAME}}</h1>
+          <p class="policy-meta">Nhà phát triển: ChauVB (chauvb.dev) · Có hiệu lực từ ngày {{EFFECTIVE_DATE_VI}}</p>
+        </div>
+      </div>
+
+      <p class="policy-lead">Chính sách này giải thích ứng dụng <strong>{{APP_NAME}}</strong> (Android, mã ứng dụng <code>{{APP_ID}}</code>) thu thập, sử dụng và chia sẻ thông tin như thế nào.</p>
+
+      <nav class="policy-toc" aria-label="Mục lục">
+        <p class="policy-toc-title">Mục lục</p>
+        <ol>
+          <li><a href="#sec-1">1. Thông tin lưu trên thiết bị của bạn</a></li>
+          <li><a href="#sec-2">2. Liên hệ</a></li>
+        </ol>
+      </nav>
+
+      <section id="sec-1">
+        <h2>1. Thông tin lưu trên thiết bị của bạn</h2>
+        <p>{{CONTENT}}</p>
+      </section>
+
+      <section id="sec-2">
+        <h2>2. Liên hệ</h2>
+        <p>Mọi câu hỏi về quyền riêng tư, xin gửi email tới: <a href="mailto:chauvb.dev@gmail.com">chauvb.dev@gmail.com</a></p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2026 ChauVB (<span class="mono">chauvb.dev</span>)</div>
+      <div class="footer-links">
+        <a href="/">Trang chủ</a>
+        <a href="/en/{{APP_SLUG}}/privacy/" lang="en" hreflang="en">English version</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js" defer></script>
+</body>
+</html>

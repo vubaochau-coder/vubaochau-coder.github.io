@@ -1,144 +1,163 @@
 <!doctype html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pixel Nonogram – Chính sách quyền riêng tư / Privacy Policy</title>
-<meta name="description" content="Chính sách quyền riêng tư của game Pixel Nonogram / Privacy policy of the Pixel Nonogram game.">
-<style>
-  :root {
-    --bg: #fbfaf7;
-    --fg: #1f2328;
-    --muted: #59636e;
-    --accent: #1e6fd8;
-    --rule: #e3e1dc;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #15171a;
-      --fg: #e6e6e3;
-      --muted: #a0a7af;
-      --accent: #7fb0f5;
-      --rule: #2c3036;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 4px; }
-  h2 { font-size: 1.2rem; margin: 32px 0 8px; }
-  p, li { margin: 0 0 10px; }
-  ul { padding-left: 22px; }
-  a { color: var(--accent); }
-  .meta { color: var(--muted); margin-bottom: 24px; }
-  .lang { margin: 0 0 24px; }
-  section.lang-block + section.lang-block {
-    border-top: 1px solid var(--rule);
-    margin-top: 48px;
-    padding-top: 32px;
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chính sách quyền riêng tư của Pixel Nonogram — ChauVB</title>
+  <meta name="description" content="Chính sách quyền riêng tư của game Pixel Nonogram (com.chauvb.nonogram) phát triển bởi ChauVB (chauvb.dev).">
+  <meta name="theme-color" content="#0D1117">
+
+  <link rel="canonical" href="https://vubaochau-coder.github.io/nonogram/privacy/">
+  <link rel="alternate" hreflang="vi" href="https://vubaochau-coder.github.io/nonogram/privacy/">
+  <link rel="alternate" hreflang="en" href="https://vubaochau-coder.github.io/en/nonogram/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://vubaochau-coder.github.io/nonogram/privacy/">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="ChauVB">
+  <meta property="og:title" content="Chính sách quyền riêng tư của Pixel Nonogram">
+  <meta property="og:description" content="Chính sách quyền riêng tư của game Pixel Nonogram (Android, com.chauvb.nonogram).">
+  <meta property="og:url" content="https://vubaochau-coder.github.io/nonogram/privacy/">
+  <meta property="og:image" content="https://vubaochau-coder.github.io/images/og-image.png">
+
+  <script>try{if(localStorage.getItem('chauvb-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<main>
-  <p class="lang"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
+  <a class="skip-link" href="#main-content">Chuyển tới nội dung chính</a>
 
-  <section class="lang-block" id="vi" lang="vi">
-    <h1>Chính sách quyền riêng tư của Pixel Nonogram</h1>
-    <p class="meta">Nhà phát triển: ChauVB (chauvb.dev) · Có hiệu lực từ ngày 13/11/2026</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="/">
+        <img class="brand-logo" src="/images/chauvb-logo.svg" alt="Biểu tượng chauvb.dev" width="38" height="38">
+        <span>
+          <span class="brand-name">ChauVB</span>
+          <span class="brand-handle">chauvb.dev</span>
+        </span>
+      </a>
 
-    <p>Chính sách này giải thích game <strong>Pixel Nonogram</strong> (Android, mã ứng dụng <code>com.chauvb.nonogram</code>) thu thập, sử dụng và chia sẻ thông tin như thế nào. Khi dùng Pixel Nonogram, bạn đồng ý với các nội dung dưới đây.</p>
+      <nav class="header-actions" aria-label="Ngôn ngữ và giao diện">
+        <a class="control-btn" href="/en/nonogram/privacy/" lang="en" hreflang="en">
+          <span aria-hidden="true">🌐</span>
+          <span>English</span>
+        </a>
+        <button id="theme-toggle" class="control-btn" type="button" aria-pressed="false"
+                data-label-light="Chuyển sang giao diện sáng"
+                data-label-dark="Chuyển sang giao diện tối"
+                aria-label="Chuyển sang giao diện sáng">
+          <span data-theme-icon aria-hidden="true">☀️</span>
+        </button>
+      </nav>
+    </div>
+  </header>
 
-    <h2>1. Thông tin lưu trên thiết bị của bạn</h2>
-    <p>Pixel Nonogram không có tài khoản và không yêu cầu đăng nhập. Tiến độ chơi (màn đã giải, ván đang chơi dở, số lượt gợi ý và gậy phép còn lại) và các tuỳ chọn (giao diện sáng/tối, hướng dẫn đã xem, lời mời đánh giá app) chỉ được lưu trên thiết bị của bạn. Chúng tôi không nhận được những dữ liệu này. Gỡ app hoặc xoá dữ liệu app sẽ xoá toàn bộ chúng.</p>
+  <main id="main-content" class="container">
+    <article class="policy-article" style="--app-accent: #5B48DA;">
+      <div class="policy-topbar">
+        <a class="back-link" href="/">← Quay về trang chủ</a>
+        <button class="control-btn no-print" type="button" onclick="window.print()">
+          <span aria-hidden="true">🖨</span>
+          <span>In / Lưu PDF</span>
+        </button>
+      </div>
 
-    <h2>2. Quảng cáo (Google AdMob)</h2>
-    <p>Bản Android của Pixel Nonogram hiển thị quảng cáo qua Google AdMob, gồm quảng cáo có tặng thưởng (bạn tự chọn xem để nhận thêm lượt gợi ý hoặc gậy phép) và quảng cáo xen kẽ khi chuyển màn. Để hiển thị và đo lường quảng cáo, Google và các đối tác quảng cáo của Google có thể thu thập:</p>
-    <ul>
-      <li>Mã nhận dạng quảng cáo (Advertising ID) và các mã nhận dạng thiết bị khác;</li>
-      <li>Địa chỉ IP và vị trí gần đúng suy ra từ địa chỉ IP;</li>
-      <li>Thông tin thiết bị và hệ điều hành (kiểu máy, ngôn ngữ, phiên bản);</li>
-      <li>Thông tin tương tác với quảng cáo (quảng cáo đã hiển thị, đã nhấn) và dữ liệu chẩn đoán.</li>
-    </ul>
-    <p>Dữ liệu này được dùng để hiển thị quảng cáo, giới hạn tần suất, đo hiệu quả quảng cáo, chống gian lận và (nếu bạn đồng ý) cá nhân hoá quảng cáo. Google xử lý dữ liệu này theo chính sách của Google: <a href="https://policies.google.com/technologies/partner-sites">Cách Google sử dụng thông tin từ các trang web hoặc ứng dụng sử dụng dịch vụ của Google</a> và <a href="https://policies.google.com/privacy">Chính sách quyền riêng tư của Google</a>.</p>
+      <div class="policy-header">
+        <img class="policy-app-icon" src="/images/pixel-nonogram.png" alt="Biểu tượng Pixel Nonogram" width="52" height="52">
+        <div>
+          <h1>Chính sách quyền riêng tư của Pixel Nonogram</h1>
+          <p class="policy-meta">Nhà phát triển: ChauVB (chauvb.dev) · Có hiệu lực từ ngày 13/11/2026</p>
+        </div>
+      </div>
 
-    <h2>3. Lựa chọn của bạn</h2>
-    <ul>
-      <li><strong>Người dùng tại Khu vực Kinh tế châu Âu, Vương quốc Anh và Thụy Sĩ:</strong> khi mở app lần đầu, bạn sẽ được hỏi có đồng ý cho dùng dữ liệu để cá nhân hoá quảng cáo hay không. Bạn có thể đổi lựa chọn bất cứ lúc nào trong <em>Cài đặt → Quyền riêng tư quảng cáo</em> trong game.</li>
-      <li><strong>Trên mọi thiết bị Android:</strong> bạn có thể xoá hoặc đặt lại mã nhận dạng quảng cáo, hoặc tắt quảng cáo cá nhân hoá, trong phần Cài đặt của Android (thường ở <em>Google → Quảng cáo</em> hoặc <em>Quyền riêng tư → Quảng cáo</em>).</li>
-      <li>Không có mạng thì game vẫn chơi được bình thường, và khi đó không có quảng cáo nào được tải.</li>
-    </ul>
+      <p class="policy-lead">Chính sách này giải thích game <strong>Pixel Nonogram</strong> (Android, mã ứng dụng <code>com.chauvb.nonogram</code>) thu thập, sử dụng và chia sẻ thông tin như thế nào. Khi dùng Pixel Nonogram, bạn đồng ý với các nội dung dưới đây.</p>
 
-    <h2>4. Mua trong ứng dụng</h2>
-    <p>Bạn có thể mua gói "Chơi không quảng cáo" (thanh toán một lần). Giao dịch do Google Play xử lý; chúng tôi không nhận được thông tin thẻ hay phương thức thanh toán của bạn. Game hỏi Google Play xem bạn đã mua gói chưa (để khôi phục khi cài lại app) và lưu kết quả trên thiết bị.</p>
-    <p><strong>Điểm danh hằng ngày:</strong> mỗi lần mở game, game gửi một yêu cầu nhỏ tới máy chủ của Google để lấy giờ chuẩn, dùng để tính ngày điểm danh và hạn của các lượt dùng trong ngày. Yêu cầu này không chứa thông tin nào về bạn ngoài những gì một kết nối mạng thông thường để lộ (như địa chỉ IP). Lịch sử điểm danh chỉ được lưu trên thiết bị của bạn.</p>
+      <nav class="policy-toc" aria-label="Mục lục">
+        <p class="policy-toc-title">Mục lục</p>
+        <ol>
+          <li><a href="#sec-1">1. Thông tin lưu trên thiết bị của bạn</a></li>
+          <li><a href="#sec-2">2. Quảng cáo (Google AdMob)</a></li>
+          <li><a href="#sec-3">3. Lựa chọn của bạn</a></li>
+          <li><a href="#sec-4">4. Mua trong ứng dụng</a></li>
+          <li><a href="#sec-5">5. Đánh giá app</a></li>
+          <li><a href="#sec-6">6. Trẻ em</a></li>
+          <li><a href="#sec-7">7. Chia sẻ và bảo mật</a></li>
+          <li><a href="#sec-8">8. Thay đổi chính sách</a></li>
+          <li><a href="#sec-9">9. Liên hệ</a></li>
+        </ol>
+      </nav>
 
-    <h2>5. Đánh giá app</h2>
-    <p>Game có thể mời bạn chấm điểm từ 1 đến 5 sao. Số sao bạn chọn chỉ được lưu trên thiết bị để không hỏi lại, và không được gửi cho chúng tôi. Nếu bạn chọn 5 sao, game sẽ mở trang Pixel Nonogram trên Google Play. Đánh giá bạn viết trên Google Play tuân theo chính sách của Google.</p>
+      <section id="sec-1">
+        <h2>1. Thông tin lưu trên thiết bị của bạn</h2>
+        <p>Pixel Nonogram không có tài khoản và không yêu cầu đăng nhập. Tiến độ chơi (màn đã giải, ván đang chơi dở, số lượt gợi ý và gậy phép còn lại) và các tuỳ chọn (giao diện sáng/tối, hướng dẫn đã xem, lời mời đánh giá app) chỉ được lưu trên thiết bị của bạn. Chúng tôi không nhận được những dữ liệu này. Gỡ app hoặc xoá dữ liệu app sẽ xoá toàn bộ chúng.</p>
+      </section>
 
-    <h2>6. Trẻ em</h2>
-    <p>Pixel Nonogram không hướng tới trẻ em dưới 13 tuổi và chúng tôi không cố ý thu thập thông tin cá nhân của trẻ em. Nếu bạn cho rằng một trẻ em đã cung cấp thông tin cho chúng tôi, hãy liên hệ để chúng tôi xử lý.</p>
+      <section id="sec-2">
+        <h2>2. Quảng cáo (Google AdMob)</h2>
+        <p>Bản Android của Pixel Nonogram hiển thị quảng cáo qua Google AdMob, gồm quảng cáo có tặng thưởng (bạn tự chọn xem để nhận thêm lượt gợi ý hoặc gậy phép) và quảng cáo xen kẽ khi chuyển màn. Để hiển thị và đo lường quảng cáo, Google và các đối tác quảng cáo của Google có thể thu thập:</p>
+        <ul>
+          <li>Mã nhận dạng quảng cáo (Advertising ID) và các mã nhận dạng thiết bị khác;</li>
+          <li>Địa chỉ IP và vị trí gần đúng suy ra từ địa chỉ IP;</li>
+          <li>Thông tin thiết bị và hệ điều hành (kiểu máy, ngôn ngữ, phiên bản);</li>
+          <li>Thông tin tương tác với quảng cáo (quảng cáo đã hiển thị, đã nhấn) và dữ liệu chẩn đoán.</li>
+        </ul>
+        <p>Dữ liệu này được dùng để hiển thị quảng cáo, giới hạn tần suất, đo hiệu quả quảng cáo, chống gian lận và (nếu bạn đồng ý) cá nhân hoá quảng cáo. Google xử lý dữ liệu này theo chính sách của Google: <a href="https://policies.google.com/technologies/partner-sites">Cách Google sử dụng thông tin từ các trang web hoặc ứng dụng sử dụng dịch vụ của Google</a> và <a href="https://policies.google.com/privacy">Chính sách quyền riêng tư của Google</a>.</p>
+      </section>
 
-    <h2>7. Chia sẻ và bảo mật</h2>
-    <p>Chúng tôi không bán dữ liệu cá nhân và không tự thu thập dữ liệu nào ngoài những gì mô tả ở trên. Dữ liệu quảng cáo do Google thu thập trực tiếp và được truyền qua kết nối mã hoá.</p>
+      <section id="sec-3">
+        <h2>3. Lựa chọn của bạn</h2>
+        <ul>
+          <li><strong>Người dùng tại Khu vực Kinh tế châu Âu, Vương quốc Anh và Thụy Sĩ:</strong> khi mở app lần đầu, bạn sẽ được hỏi có đồng ý cho dùng dữ liệu để cá nhân hoá quảng cáo hay không. Bạn có thể đổi lựa chọn bất cứ lúc nào trong <em>Cài đặt → Quyền riêng tư quảng cáo</em> trong game.</li>
+          <li><strong>Trên mọi thiết bị Android:</strong> bạn có thể xoá hoặc đặt lại mã nhận dạng quảng cáo, hoặc tắt quảng cáo cá nhân hoá, trong phần Cài đặt của Android (thường ở <em>Google → Quảng cáo</em> hoặc <em>Quyền riêng tư → Quảng cáo</em>).</li>
+          <li>Không có mạng thì game vẫn chơi được bình thường, và khi đó không có quảng cáo nào được tải.</li>
+        </ul>
+      </section>
 
-    <h2>8. Thay đổi chính sách</h2>
-    <p>Chúng tôi có thể cập nhật chính sách này khi game thay đổi. Bản mới sẽ được đăng tại trang này, kèm ngày có hiệu lực mới.</p>
+      <section id="sec-4">
+        <h2>4. Mua trong ứng dụng</h2>
+        <p>Bạn có thể mua gói "Chơi không quảng cáo" (thanh toán một lần). Giao dịch do Google Play xử lý; chúng tôi không nhận được thông tin thẻ hay phương thức thanh toán của bạn. Game hỏi Google Play xem bạn đã mua gói chưa (để khôi phục khi cài lại app) và lưu kết quả trên thiết bị.</p>
+        <p><strong>Điểm danh hằng ngày:</strong> mỗi lần mở game, game gửi một yêu cầu nhỏ tới máy chủ của Google để lấy giờ chuẩn, dùng để tính ngày điểm danh và hạn của các lượt dùng trong ngày. Yêu cầu này không chứa thông tin nào về bạn ngoài những gì một kết nối mạng thông thường để lộ (như địa chỉ IP). Lịch sử điểm danh chỉ được lưu trên thiết bị của bạn.</p>
+      </section>
 
-    <h2>9. Liên hệ</h2>
-    <p>Mọi câu hỏi về quyền riêng tư, xin gửi email tới: <a href="mailto:chauvb.dev@gmail.com">chauvb.dev@gmail.com</a></p>
-  </section>
+      <section id="sec-5">
+        <h2>5. Đánh giá app</h2>
+        <p>Game có thể mời bạn chấm điểm từ 1 đến 5 sao. Số sao bạn chọn chỉ được lưu trên thiết bị để không hỏi lại, và không được gửi cho chúng tôi. Nếu bạn chọn 5 sao, game sẽ mở trang Pixel Nonogram trên Google Play. Đánh giá bạn viết trên Google Play tuân theo chính sách của Google.</p>
+      </section>
 
-  <section class="lang-block" id="en" lang="en">
-    <h1>Pixel Nonogram Privacy Policy</h1>
-    <p class="meta">Developer: ChauVB (chauvb.dev) · Effective November 13, 2026</p>
+      <section id="sec-6">
+        <h2>6. Trẻ em</h2>
+        <p>Pixel Nonogram không hướng tới trẻ em dưới 13 tuổi và chúng tôi không cố ý thu thập thông tin cá nhân của trẻ em. Nếu bạn cho rằng một trẻ em đã cung cấp thông tin cho chúng tôi, hãy liên hệ để chúng tôi xử lý.</p>
+      </section>
 
-    <p>This policy explains how the <strong>Pixel Nonogram</strong> game (Android, application ID <code>com.chauvb.nonogram</code>) collects, uses and shares information. By using Pixel Nonogram, you agree to this policy.</p>
+      <section id="sec-7">
+        <h2>7. Chia sẻ và bảo mật</h2>
+        <p>Chúng tôi không bán dữ liệu cá nhân và không tự thu thập dữ liệu nào ngoài những gì mô tả ở trên. Dữ liệu quảng cáo do Google thu thập trực tiếp và được truyền qua kết nối mã hoá.</p>
+      </section>
 
-    <h2>1. Information stored on your device</h2>
-    <p>Pixel Nonogram has no accounts and no sign-in. Your game progress (solved levels, the game in progress, remaining hints and magic wands) and preferences (light/dark theme, tutorials seen, rating prompt) are stored only on your device. We never receive them. Uninstalling the app or clearing its data deletes them.</p>
+      <section id="sec-8">
+        <h2>8. Thay đổi chính sách</h2>
+        <p>Chúng tôi có thể cập nhật chính sách này khi game thay đổi. Bản mới sẽ được đăng tại trang này, kèm ngày có hiệu lực mới.</p>
+      </section>
 
-    <h2>2. Advertising (Google AdMob)</h2>
-    <p>The Android version of Pixel Nonogram shows ads through Google AdMob: rewarded ads (which you choose to watch to get an extra hint or magic wand) and interstitial ads between levels. To serve and measure ads, Google and its advertising partners may collect:</p>
-    <ul>
-      <li>Your advertising ID and other device identifiers;</li>
-      <li>Your IP address and approximate location derived from it;</li>
-      <li>Device and operating system information (model, language, version);</li>
-      <li>Ad interactions (ads shown and tapped) and diagnostic data.</li>
-    </ul>
-    <p>This data is used to serve ads, cap their frequency, measure their performance, prevent fraud and, if you consent, personalize ads. Google handles it under its own policies: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+      <section id="sec-9">
+        <h2>9. Liên hệ</h2>
+        <p>Mọi câu hỏi về quyền riêng tư, xin gửi email tới: <a href="mailto:chauvb.dev@gmail.com">chauvb.dev@gmail.com</a></p>
+      </section>
+    </article>
+  </main>
 
-    <h2>3. Your choices</h2>
-    <ul>
-      <li><strong>Users in the European Economic Area, the United Kingdom and Switzerland:</strong> the first time you open the app, you are asked whether your data may be used for personalized ads. You can change your choice at any time in the game under <em>Settings → Ad privacy</em>.</li>
-      <li><strong>On any Android device:</strong> you can delete or reset your advertising ID, or opt out of personalized ads, in Android Settings (usually <em>Google → Ads</em> or <em>Privacy → Ads</em>).</li>
-      <li>The game works offline, and no ads are loaded while you are offline.</li>
-    </ul>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2026 ChauVB (<span class="mono">chauvb.dev</span>)</div>
+      <div class="footer-links">
+        <a href="/">Trang chủ</a>
+        <a href="/en/nonogram/privacy/" lang="en" hreflang="en">English version</a>
+      </div>
+    </div>
+  </footer>
 
-    <h2>4. In-app purchases</h2>
-    <p>You can buy the "Play without ads" pack (one-time payment). Purchases are processed by Google Play; we never receive your card or payment details. The game asks Google Play whether you own the pack (so it is restored when you reinstall) and stores the result on your device.</p>
-    <p><strong>Daily check-in:</strong> each time the game starts it sends a small request to a Google server to get the current time, used to work out check-in days and when today-only uses expire. The request carries nothing about you beyond what any network connection reveals (such as your IP address). Your check-in history is stored only on your device.</p>
-
-    <h2>5. Rating the app</h2>
-    <p>The game may ask you to rate it from 1 to 5 stars. Your choice is stored only on your device, so you are not asked again, and it is never sent to us. If you choose 5 stars, the game opens the Pixel Nonogram page on Google Play. Reviews you post on Google Play are governed by Google's policies.</p>
-
-    <h2>6. Children</h2>
-    <p>Pixel Nonogram is not directed at children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided us with information, please contact us so we can deal with it.</p>
-
-    <h2>7. Sharing and security</h2>
-    <p>We do not sell personal data, and we do not collect any data beyond what is described above. Advertising data is collected directly by Google and sent over encrypted connections.</p>
-
-    <h2>8. Changes to this policy</h2>
-    <p>We may update this policy as the game changes. The new version will be posted on this page with a new effective date.</p>
-
-    <h2>9. Contact</h2>
-    <p>For any privacy questions, email: <a href="mailto:chauvb.dev@gmail.com">chauvb.dev@gmail.com</a></p>
-  </section>
-</main>
+  <script src="/assets/site.js" defer></script>
 </body>
 </html>

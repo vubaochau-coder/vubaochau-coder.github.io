@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{APP_NAME}} Privacy Policy — ChauVB</title>
+  <meta name="description" content="Privacy policy of {{APP_NAME}} ({{APP_ID}}) developed by ChauVB (chauvb.dev).">
+  <meta name="theme-color" content="#0D1117">
+
+  <link rel="canonical" href="https://vubaochau-coder.github.io/en/{{APP_SLUG}}/privacy/">
+  <link rel="alternate" hreflang="vi" href="https://vubaochau-coder.github.io/{{APP_SLUG}}/privacy/">
+  <link rel="alternate" hreflang="en" href="https://vubaochau-coder.github.io/en/{{APP_SLUG}}/privacy/">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <script>try{if(localStorage.getItem('chauvb-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="/en/">
+        <img class="brand-logo" src="/images/chauvb-logo.svg" alt="chauvb.dev logo" width="38" height="38">
+        <span>
+          <span class="brand-name">ChauVB</span>
+          <span class="brand-handle">chauvb.dev</span>
+        </span>
+      </a>
+      <nav class="header-actions" aria-label="Language and theme">
+        <a class="control-btn" href="/{{APP_SLUG}}/privacy/" lang="vi" hreflang="vi">
+          <span aria-hidden="true">🌐</span>
+          <span>Tiếng Việt</span>
+        </a>
+        <button id="theme-toggle" class="control-btn" type="button" aria-pressed="false"
+                data-label-light="Switch to light theme"
+                data-label-dark="Switch to dark theme"
+                aria-label="Switch to light theme">
+          <span data-theme-icon aria-hidden="true">☀️</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <!-- Customize --app-accent per app -->
+    <article class="policy-article" style="--app-accent: #3FB978;">
+      <div class="policy-topbar">
+        <a class="back-link" href="/en/">← Back to home</a>
+        <button class="control-btn no-print" type="button" onclick="window.print()">
+          <span aria-hidden="true">🖨</span>
+          <span>Print / PDF</span>
+        </button>
+      </div>
+
+      <div class="policy-header">
+        <img class="policy-app-icon" src="/images/{{APP_SLUG}}.png" alt="{{APP_NAME}} icon" width="52" height="52">
+        <div>
+          <h1>{{APP_NAME}} Privacy Policy</h1>
+          <p class="policy-meta">Developer: ChauVB (chauvb.dev) · Effective {{EFFECTIVE_DATE_EN}}</p>
+        </div>
+      </div>
+
+      <p class="policy-lead">This policy explains how <strong>{{APP_NAME}}</strong> (Android, application ID <code>{{APP_ID}}</code>) collects, uses and shares information.</p>
+
+      <nav class="policy-toc" aria-label="Contents">
+        <p class="policy-toc-title">Contents</p>
+        <ol>
+          <li><a href="#sec-1">1. Information stored on your device</a></li>
+          <li><a href="#sec-2">2. Contact</a></li>
+        </ol>
+      </nav>
+
+      <section id="sec-1">
+        <h2>1. Information stored on your device</h2>
+        <p>{{CONTENT}}</p>
+      </section>
+
+      <section id="sec-2">
+        <h2>2. Contact</h2>
+        <p>For any privacy questions, email: <a href="mailto:chauvb.dev@gmail.com">chauvb.dev@gmail.com</a></p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2026 ChauVB (<span class="mono">chauvb.dev</span>)</div>
+      <div class="footer-links">
+        <a href="/en/">Home</a>
+        <a href="/{{APP_SLUG}}/privacy/" lang="vi" hreflang="vi">Bản tiếng Việt</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js" defer></script>
+</body>
+</html>
