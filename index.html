@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel Nonogram</title>
+<meta name="description" content="Pixel Nonogram – game giải đố hình ảnh logic, chơi offline / An offline picture logic puzzle game.">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #1e6fd8;
+    --rule: #e3e1dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171a;
+      --fg: #e6e6e3;
+      --muted: #a0a7af;
+      --accent: #7fb0f5;
+      --rule: #2c3036;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); margin-bottom: 24px; }
+  .lang { margin: 0 0 24px; }
+  section.lang-block + section.lang-block {
+    border-top: 1px solid var(--rule);
+    margin-top: 48px;
+    padding-top: 32px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="lang"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></p>
+
+  <section class="lang-block" id="vi" lang="vi">
+    <h1>Pixel Nonogram</h1>
+    <p class="meta">Game giải đố hình ảnh logic cho Android</p>
+
+    <p><strong>Pixel Nonogram</strong> là game nonogram (giải đố hình ảnh bằng logic): dựa vào các con số ở đầu hàng và cột để tô ô, dần dần hiện ra một bức tranh pixel. Game chơi offline, không cần tài khoản.</p>
+
+    <h2>Tải game</h2>
+    <p><a href="https://play.google.com/store/apps/details?id=com.chauvb.nonogram">Pixel Nonogram trên Google Play</a></p>
+
+    <h2>Thông tin</h2>
+    <ul>
+      <li><a href="/nonogram/privacy/">Chính sách quyền riêng tư</a></li>
+      <li><a href="/app-ads.txt">app-ads.txt</a></li>
+    </ul>
+  </section>
+
+  <section class="lang-block" id="en" lang="en">
+    <h1>Pixel Nonogram</h1>
+    <p class="meta">A picture logic puzzle game for Android</p>
+
+    <p><strong>Pixel Nonogram</strong> is a nonogram (picture logic) puzzle game: use the numbers at the start of each row and column to fill in cells and reveal a pixel-art picture. It plays offline and needs no account.</p>
+
+    <h2>Get the game</h2>
+    <p><a href="https://play.google.com/store/apps/details?id=com.chauvb.nonogram">Pixel Nonogram on Google Play</a></p>
+
+    <h2>Information</h2>
+    <ul>
+      <li><a href="/nonogram/privacy/">Privacy policy</a></li>
+      <li><a href="/app-ads.txt">app-ads.txt</a></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
